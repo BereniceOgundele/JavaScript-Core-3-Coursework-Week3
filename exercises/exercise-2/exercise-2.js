@@ -71,3 +71,15 @@ let hogwarts = [
   },
 ];
 
+
+function jsExerciseTwo(wizards) {
+  const membersGryffindor = wizards.filter(w => w.house === "Gryffindor");
+  membersGryffindor.forEach(wizard => {
+    const { firstName, lastName } = wizard
+
+    console.log(`${firstName} ${lastName}`);
+    
+  });
+}
+
+jsExerciseTwo(hogwarts);
